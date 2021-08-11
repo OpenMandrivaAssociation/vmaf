@@ -5,18 +5,17 @@
 %define _lto_cflags %nil
 Name:           vmaf
 Version:        2.2.0
-Release:        0
+Release:        1
 Summary:        Perceptual video quality assessment algorithm
 License:        BSD-2-Clause-Patent AND BSD-3-Clause
 Group:          Productivity/Multimedia/Video/Editors and Convertors
 URL:            https://github.com/Netflix/vmaf
-Source:         https://github.com/Netflix/vmaf/archive/v%version.tar.gz
-Source9:        baselibs.conf
+Source:         https://github.com/Netflix/vmaf/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  fdupes
-BuildRequires:  gcc-c++
+
 BuildRequires:  meson >= 0.47
 BuildRequires:  nasm
-BuildRequires:  pkg-config
+BuildRequires:  pkgconfig
 Provides:       bundled(libsvm) = 3.18
 
 %description
